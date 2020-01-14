@@ -13,7 +13,7 @@
         :article-info="blog"
       />
     </Container>
-    <ContactForm />
+    <QuestionForm />
   </section>
 </template>
 
@@ -21,7 +21,7 @@
 import ArticleCard from '~/components/ArticleCard'
 import Container from '~/components/Container'
 
-import ContactForm from '~/components/ContactForm'
+import QuestionForm from '~/components/QuestionForm'
 
 import blogs from '~/content/blogs.json'
 
@@ -29,7 +29,7 @@ export default {
   components: {
     ArticleCard,
     Container,
-    ContactForm
+    QuestionForm
   },
 
   async asyncData({ app }) {

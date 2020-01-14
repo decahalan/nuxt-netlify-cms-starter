@@ -1,14 +1,8 @@
 <template>
   <div class="question-form">
     <notification-container :status="status" />
-    <form
-      name="contact"
-      method="post"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      @submit.prevent="handleSubmit"
-    >
-      <input type="hidden" name="form-name" value="contact" />
+    <form method="post" @submit.prevent="handleSubmit">
+      <input type="hidden" name="form-name" value="ask-question" />
       <ul>
         <li>
           <label>
