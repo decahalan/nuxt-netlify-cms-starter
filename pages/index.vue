@@ -13,6 +13,7 @@
         :article-info="blog"
       />
     </Container>
+    <ContactForm />
   </section>
 </template>
 
@@ -20,12 +21,15 @@
 import ArticleCard from '~/components/ArticleCard'
 import Container from '~/components/Container'
 
+import ContactForm from '~/components/ContactForm'
+
 import blogs from '~/content/blogs.json'
 
 export default {
   components: {
     ArticleCard,
-    Container
+    Container,
+    ContactForm
   },
 
   async asyncData({ app }) {
