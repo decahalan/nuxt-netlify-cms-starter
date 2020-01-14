@@ -1,4 +1,5 @@
 import blogs from './content/blogs.json'
+const path = require('path')
 
 export default {
   mode: 'universal',
@@ -94,7 +95,8 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     'nuxt-fontawesome',
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+    '@nuxtjs/tailwindcss'
   ],
 
   /**
@@ -196,5 +198,6 @@ export default {
         }
       })
     }
+  
   }
 }

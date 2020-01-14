@@ -11,6 +11,7 @@
         data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="vue-tea" />
+        <label>Name</label>
         <input id="name" name="name" type="string" />
         <div class="tea">
           <h2>Pick a Tea</h2>

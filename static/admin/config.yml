@@ -16,3 +16,13 @@ collections:
       - {label: "Publish Date", name: "date", widget: "date", required: true}
       - {label: "Updated Date", name: "update", widget: "date", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: true}
+  - name: "faq"
+    label: "FAQ"
+    folder: "content/faq"
+    create: true
+    identifier_field: question
+    slug: "{{slug}}"
+    sort: "date:desc"
+    fields:
+      - {label: "Question", name: "question", widget: "string", required: true}
+      - {label: "Answer", name: "answer", widget: "string", required: true}
