@@ -1,7 +1,7 @@
 <template>
   <div class="question-form">
     <notification-container :status="status" />
-    <form method="post" @submit.prevent="handleSubmit" netlify>
+    <form name="contact" method="post" @submit.prevent="handleSubmit" netlify>
       <input type="hidden" name="form-name" value="ask-question" />
       <ul>
         <li>
