@@ -19,9 +19,9 @@ export default {
       type: Object
     }
   },
-  methods: {
-    removeNotification() {
-      this.hasNotifications = false
+  data() {
+    return {
+      hasNotifications: false
     }
   },
   watch: {
@@ -29,9 +29,9 @@ export default {
       this.hasNotifications = true
     }
   },
-  data() {
-    return {
-      hasNotifications: false
+  methods: {
+    removeNotification() {
+      this.hasNotifications = false
     }
   }
 }
