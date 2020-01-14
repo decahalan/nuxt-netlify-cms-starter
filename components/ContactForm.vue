@@ -1,8 +1,14 @@
 <template>
   <div class="question-form">
     <notification-container :status="status" />
-    <form name="contact" method="post" @submit.prevent="handleSubmit" netlify>
-      <input type="hidden" name="form-name" value="ask-question" />
+    <form
+      name="contact"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      @submit.prevent="handleSubmit"
+    >
+      <input type="hidden" name="form-name" value="contact" />
       <ul>
         <li>
           <label>
@@ -17,8 +23,8 @@
         <li>
           <p>Ask:</p>
           <label
-            v-bind:key="panelist"
             v-for="panelist in panelists"
+            v-bind:key="panelist"
             :class="{
               'pick-panelist': true,
               'checked ': form.askPerson === panelist,
